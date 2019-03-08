@@ -3,6 +3,12 @@
 *A simple REST service powered by Flask*
 
 
+## Usage
+```
+python3 services/latency/app.py
+```
+
+
 ## Authors
 Giacomo Marciani, [gmarciani@acm.org](mailto:gmarciani@acm.org)
 
