@@ -1,4 +1,4 @@
-from services.latency.app import app
+from app import app
 from common.utils.tests import responses
 
 import unittest

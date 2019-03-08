@@ -5,7 +5,7 @@
 
 ## Usage
 ```
-python3 services/latency/app.py
+python3 app.py
 ```
 
 

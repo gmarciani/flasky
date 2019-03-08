@@ -1,5 +1,5 @@
 """
-The REST API for the service 'Latency'.
+The REST API that simulates tasks through random latency.
 """
 
 
@@ -8,12 +8,9 @@ from random import uniform
 from time import sleep
 
 
-SERVICES = ["agents_manager", "repository", "kubernetes"]
-
-
 class Task(Resource):
     """
-    The Flask resource realizing the REST API for the service 'Latency'.
+    The Flask resource realizing the REST API that simulates tasks through random latency.
     """
 
     def get(self):

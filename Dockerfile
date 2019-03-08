@@ -8,18 +8,17 @@ FROM python:3.6
 LABEL Description="Flasky / Latency" Vendor="Giacomo Marciani" Version="1.0.0"
 
 # ARGUMENTS
-ARG rootdir=../..
+ARG rootdir=.
 
 # OS UPDATE
 RUN apt-get update -y
 RUN apt-get install -y python-pip python-dev
 
 # SOURCES
-ADD $rootdir/services/latency /app/services/latency
-ADD $rootdir/common /app/common
+ADD $rootdir /app/flasky
 
 # Change working directory
-WORKDIR /app
+WORKDIR /app/flasky
 
 COPY ./requirements.txt ./requirements.txt
 

@@ -8,8 +8,8 @@ from os.path import join, dirname, realpath
 pythonpath.append(join(dirname(realpath(__file__)), "../../"))
 
 from common.model.environment.webapp import WebApp as App
-from services.latency.config import Debug as AppConfig
-from services.latency.api.task import Task
+from config import Debug as AppConfig
+from api.task import Task
 from sys import argv
 
 
