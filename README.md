@@ -3,9 +3,9 @@
 *A simple REST service powered by Flask*
 
 
-## Usage
+### Docker
 ```
-python3 app.py
+docker run -p 8000:8000 flasky
 ```
 
 

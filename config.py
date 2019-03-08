@@ -12,7 +12,7 @@ class Default:
     LOG_LEVEL = "INFO"
 
     APP_HOST = "localhost"
-    APP_PORT = 18001
+    APP_PORT = 8000
 
 
 class Debug(Default):
