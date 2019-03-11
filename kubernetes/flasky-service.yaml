@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: flasky
+  labels:
+    service: flasky
+spec:
+  selector:
+    app: flasky
+  type: LoadBalancer
+  ports:
+  - port: 8000

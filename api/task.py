@@ -6,6 +6,7 @@ The REST API that simulates tasks through random latency.
 from flask_restful import Resource
 from random import uniform
 from time import sleep
+import socket
 
 
 class Task(Resource):
@@ -21,6 +22,7 @@ class Task(Resource):
         res : dict
             The response.
         """
+        host_ip = socket.gethostbyname(socket.gethostname())
         task_latency = uniform(1, 5)
         sleep(task_latency)
-        return dict(status="OK", task_latency=task_latency)
+        return dict(status="OK", host_ip=host_ip, task_latency=task_latency)
