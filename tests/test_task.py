@@ -26,7 +26,7 @@ class TaskTestCase(unittest.TestCase):
         :return:
         """
         rv = self.app.get("/task")
-        self.assertTrue(responses.match_status(rv, 200), "HTTP status code mismatch")
+        self.assertEqual(200, rv.status_code, "HTTP status code mismatch")
 
         expected_1 = dict(status="OK")
         self.assertTrue(responses.match_data(rv, expected_1), "JSON mismatch")
