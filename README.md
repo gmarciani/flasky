@@ -3,6 +3,7 @@
 *A simple REST service powered by Flask*
 
 [![Build Status](https://travis-ci.org/gmarciani/flasky.svg?branch=master)](https://travis-ci.org/gmarciani/flasky)
+[![codecov](https://codecov.io/gh/gmarciani/flasky/branch/master/graph/badge.svg)](https://codecov.io/gh/gmarciani/flasky)
 
 
 ### Docker
