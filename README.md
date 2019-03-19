@@ -2,6 +2,8 @@
 
 *A simple REST service powered by Flask*
 
+[![Build Status](https://travis-ci.org/gmarciani/flasky.svg?branch=master)](https://travis-ci.org/gmarciani/flasky)
+
 
 ### Docker
 ```
