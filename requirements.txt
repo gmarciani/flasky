@@ -2,4 +2,3 @@ Flask
 Flask_Restful
 requests
 apscheduler
-werkzeug

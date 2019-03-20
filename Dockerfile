@@ -28,4 +28,4 @@ RUN pip install -r requirements.txt
 EXPOSE 8000
 
 # Run app.py when the container launches
-CMD ["python3", "app.py"]
+CMD ["python3", "service/app.py"]
