@@ -10,10 +10,6 @@ install:
   
 script: 
   - pytest
-  - coverage run tests/test_task.py
- 
-after_success:
-  - codecov
 
 branches:
   only:
