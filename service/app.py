@@ -2,14 +2,13 @@
 The Flask application that realizes the service 'Latency'.
 """
 
-
 from sys import path as pythonpath
 from os.path import join, dirname, realpath
-pythonpath.append(join(dirname(realpath(__file__)), "../../"))
+pythonpath.append(join(dirname(realpath(__file__)), "../"))
 
-from common.model.environment.webapp import WebApp as App
-from config import Debug as AppConfig
-from api.task import Task
+from service.common.model.environment.webapp import WebApp as App
+from service.config import Debug as AppConfig
+from service.api.task import Task
 from sys import argv
 
 

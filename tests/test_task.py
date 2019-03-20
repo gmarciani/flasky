@@ -1,5 +1,5 @@
-from app import app
-from common.utils.tests import responses
+from service.app import app
+from service.common.utils.tests import responses
 
 import unittest
 

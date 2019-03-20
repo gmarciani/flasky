@@ -1,4 +1,4 @@
-from common.utils.jsonutils import AdvancedJSONEncoder as JSONEncoder
+from service.common.utils import AdvancedJSONEncoder as JSONEncoder
 from json import dumps
 
 
