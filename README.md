@@ -13,7 +13,7 @@ docker run -p 8000:8000 flasky
 
 
 ## Authors
-Giacomo Marciani, [gmarciani@acm.org](mailto:gmarciani@acm.org)
+Giacomo Marciani, [mgiacomo@amazon.com](mailto:mgiacomo@amazon.com)
 
 
 ## License
