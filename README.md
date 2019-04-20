@@ -16,6 +16,48 @@
 docker run -p 8000:8000 flasky
 ```
 
+### Kubernetes
+
+#### Minikube
+
+Create the Deployment
+
+```
+kubectl apply -f kubernetes/flasky-deployment.yaml
+```
+
+Create the Service
+
+```
+kubectl apply -f kubernetes/flasky-service.yaml
+```
+
+Retrieve the Service URL
+
+```
+minikube service flasky-service --url
+```
+
+
+### Tests
+
+Run all tests
+
+```
+pytest
+```
+
+
+### Stress Testing
+
+Configure Locust stress tests
+
+```
+locust -f locust/locustfile.py --host ${FLASKY_SERVICE_URL_AND_PORT}
+```
+
+Run Locust stress tests on `http://127.0.0.1:8089/`
+
 
 ## Authors
 Giacomo Marciani, [mgiacomo@amazon.com](mailto:mgiacomo@amazon.com)
