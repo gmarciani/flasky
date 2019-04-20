@@ -1,11 +1,11 @@
-apiVersion: apps/v1
+apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
   name: flasky-deployment
   labels:
     app: flasky
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: flasky
@@ -17,5 +17,6 @@ spec:
       containers:
       - name: flasky
         image: gmarciani/flasky:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 8000
